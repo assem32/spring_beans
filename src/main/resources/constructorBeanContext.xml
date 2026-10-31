@@ -15,4 +15,8 @@
         <constructor-arg ref="carSpecs"></constructor-arg>
     </bean>
 
+   <bean id="myCar2" class="com.spring_beans.car.Car2">
+        <property name = "spacifications" ref="carSpecs"></property>
+    </bean>
+
 </beans>
