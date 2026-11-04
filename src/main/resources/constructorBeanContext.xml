@@ -20,6 +20,7 @@
         <constructor-arg ref="carSpecs"></constructor-arg>
     </bean>
 
+<!-- auto wiring by name, type and constuctor -->
    <bean id="myCar2" class="com.spring_beans.car.Car2" autowire="byName"/>
         
 
