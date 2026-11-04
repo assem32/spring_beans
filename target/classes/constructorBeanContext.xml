@@ -11,12 +11,16 @@
         <property name= "model" value="Corolla"></property>
     </bean>
 
+    <bean id="spacifications1" class="com.spring_beans.car.Spacifications">
+        <property name= "make" value="Honda"></property>
+        <property name= "model" value="Civic"></property>
+    </bean>
+
     <bean id="myCar" class="com.spring_beans.car.Car">
         <constructor-arg ref="carSpecs"></constructor-arg>
     </bean>
 
-   <bean id="myCar2" class="com.spring_beans.car.Car2">
-        <property name = "spacifications" ref="carSpecs"></property>
-    </bean>
+   <bean id="myCar2" class="com.spring_beans.car.Car2" autowire="byName"/>
+        
 
 </beans>
