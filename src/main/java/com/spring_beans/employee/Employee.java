@@ -1,10 +1,12 @@
 package com.spring_beans.employee;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component 
 public class Employee {
     private int id;
+    @Value("Assem")
     private String firstName;
     private String lastName;
     private double salary;

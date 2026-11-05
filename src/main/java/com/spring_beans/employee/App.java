@@ -9,6 +9,10 @@ public class App {
 
         Employee employee = (Employee) context.getBean("employee",Employee.class);
 
-        employee.toString();
+        Manger manager = (Manger) context.getBean("manger",Manger.class);
+
+        System.out.println("Employee First Name: " + employee.getFirstName());
+
+        manager.displayEmployeeDetails();
     }
 }
